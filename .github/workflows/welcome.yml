@@ -2,6 +2,8 @@ name: Post welcome comment
 on:
   pull_request:
     types: [opened, reopened]
+permissions:
+  pull-requests: write
 jobs:
   build:
     runs-on: ubuntu-latest
